@@ -18,13 +18,17 @@ import {
 import { BsShopWindow } from "react-icons/bs";
 
 import Search from "./search";
-import Location from "./location";
 import { Badge, Button, Popover } from "antd";
 import { reduxSettings } from "../../redux/slice/settingsSlice";
 import { signOut, useSession } from "next-auth/react";
 import { PiUserCircle } from "react-icons/pi";
 import ProfileMenu from "./profileMenu";
 import dynamic from "next/dynamic";
+
+const Location = dynamic(() => import("./location"), {
+  ssr: false,
+});
+
 const CateogreyList = dynamic(() => import("./categoryList"), {
   ssr: false,
 });
