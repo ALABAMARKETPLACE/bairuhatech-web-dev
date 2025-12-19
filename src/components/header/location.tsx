@@ -174,8 +174,9 @@ function Location() {
             <br />
             <Button
               loading={loading}
-              type="primary"
+              // type="primary"
               size="large"
+              className="btn-clr"
               style={{ borderRadius: 100 }}
               onClick={() => geocdeLocation()}
             >

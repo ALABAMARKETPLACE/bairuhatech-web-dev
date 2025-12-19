@@ -109,6 +109,11 @@
   color: gray;
 }
 
+.btn-clr {
+  background: vars.$button_background_color;
+  color: #ffffff !important;
+}
+
 .Header-menu {
   display: flex;
   flex-direction: row;
@@ -159,12 +164,14 @@
   font-family: vars.$SemiBold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  color: #ffffff !important;
   border-radius: 999px;
   justify-content: center;
   width: 100%;
   @media (min-width: 768px) {
     width: auto;
   }
+  background: vars.$button_background_color;
 }
 
 .Header-sellerBtn-text {
@@ -286,7 +293,13 @@
   justify-content: center;
   text-align: center;
   font-size: 50px;
-  color: vars.$primary;
+  // color: vars.$primary;
+  color: #FF5F15;
+};
+
+.btn-clr {
+  background: vars.$button_background_color;
+  color: #ffffff !important;
 }
 
 .Header-deskCateogrey {

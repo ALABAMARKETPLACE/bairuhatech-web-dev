@@ -226,7 +226,7 @@ export default function SignupScreen() {
                 <br />
                 <Form
                   onFinish={handleSignup}
-                  initialValues={{ code: "+971" }}
+                  initialValues={{ code: "+234" }}
                   layout="vertical"
                 >
                   <Row>
@@ -409,8 +409,9 @@ export default function SignupScreen() {
                   {/* <div id="recaptcha"></div> */}
                   <Button
                     block
-                    type="primary"
+                    // type="primary"
                     size="large"
+                    className="btn-clr"
                     htmlType="submit"
                     loading={isLoading}
                     style={{ height: 45 }}
@@ -431,7 +432,7 @@ export default function SignupScreen() {
                 onClick={() => router.push("/login")}
               >
                 Already have an account?{" "}
-                <span className="signupScreen-txt5">Login</span>
+                <span className="signupScreen-txt5" style={{ color: "#FF5F15" }}>Login</span>
               </div>
             </div>
           </Col>

@@ -212,8 +212,9 @@ const ProfileMenu = (props: any) => {
         </Button>
         <Button
           size="large"
-          type="primary"
+          // type="primary"
           block
+          className="btn-clr"
           icon={<BsShopWindow size={18} />}
           onClick={handleSellerNavigation}
         >
@@ -222,7 +223,8 @@ const ProfileMenu = (props: any) => {
       </div>
       <Button
         size="large"
-        type="primary"
+        // type="primary"
+        className="btn-clr"
         block
         onClick={() => logotFunction()}
         loading={loading}

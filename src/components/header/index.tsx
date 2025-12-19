@@ -48,7 +48,7 @@ function Header() {
   const sellerCtaLabel =
     user?.user && user?.user?.type !== "user"
       ? "Manage Store"
-      : "Become a seller";
+      : "Join Us";
   const handleSellerNavigation = () => {
     if (user?.user) {
       if (user?.user?.type === "user") {
@@ -92,9 +92,9 @@ function Header() {
             </div> */}
             {showSellerCta ? (
               <div className="Header-sellerCTA">
-                <Button
+                 <Button
                   size="large"
-                  type="primary"
+                  // type="primary"
                   icon={<BsShopWindow size={18} />}
                   className="Header-sellerBtn"
                   onClick={handleSellerNavigation}
@@ -139,7 +139,7 @@ function Header() {
                       : "Header-desk-menu"
                   }
                 >
-                  <div>{user?.user?.first_name}</div>
+                  <div style={{ color: "#FF5F15" }}>{user?.user?.first_name}</div>
                   <div style={{ margin: 4 }} />
                   {user?.user?.image ? (
                     <img
